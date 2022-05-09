@@ -1,0 +1,32 @@
+*{
+    margin: 0px;
+    padding: 0%;
+    box-sizing: 0%;
+}
+.nav{
+    
+    background-color: rgb(51, 68, 76);
+    height: 50px;   
+}
+ul li{
+    list-style: none;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px;
+}
+li a{
+    text-decoration: none;
+    color: rgb(182, 194, 206);
+    border: solid 1px black;
+    padding: 5px;
+    border-radius: 3px;
+}
+li a:hover{
+    background-color: white;
+}
+:status{
+    background-color: white;
+}

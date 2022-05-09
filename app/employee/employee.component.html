@@ -1,0 +1,27 @@
+<body>
+    <div id="container">
+      <div class="initial">
+        <div *ngIf="user_name" class="user">
+          <br><input  placeholder="Enter your name hear" id="user_name" type="text">
+          <button (click)="onview()">Ok</button>
+        </div>
+        <br><h1 *ngIf="view">Add Your Work Flow</h1>
+        <br><br><div *ngIf="view" id="input">
+          <input type="text" name="" id="inputField" placeholder="Employee Name" [(ngModel)]="inputField" (keyup)="onKey($event)">
+          <input type="text" name="" id="inputField" placeholder="Mobile Number" [(ngModel)]="mobile" (keyup)="onKey($event)">
+          <input type="text" name="" id="inputField" placeholder="Date Of Join" [(ngModel)]="joined" (keyup)="onKey($event)">
+          <input type="text" name="" id="inputField" placeholder="salary" [(ngModel)]="salary" (keyup)="onKey($event)">
+          <button type="submit" id="submitButton" (click)="submit()" [disabled]="disable">Add Work</button>
+        </div>
+      </div>
+      <div class="primary_container" *ngIf="temp;">    
+        <div class="button_container" *ngFor="let todolist of todolist | slice:1; let i = index">
+          <p>{{todolist}}</p>
+          
+        </div>
+       
+  
+    </div>
+  
+  </div>
+  </body>
